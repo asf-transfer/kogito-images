@@ -226,7 +226,7 @@ pipeline {
                         gzip -q -c ${resultingFileNameTar} > ${resultingFileNameTarGz}
                     """
                     releaseUtils.gpgImportKeyFromStringWithoutPassword(getReleaseGpgSignKeyCredsId())
-                    releaseUtils.gpgSignFileDetachedSignatureWithoutPassword(resultingFileName, signatureFileName)
+                    releaseUtils.gpgSignFileDetachedSignatureWithoutPassword(resultingFileNameTarGz, signatureFileName)
                     releaseUtils.svnUploadFileToRepository(getReleaseSvnRepository(), getReleaseSvnCredsId(), getImageArtifactReleaseCandidateVersion(), resultingFileNameTarGz, signatureFileName, checksumFileName)
                 }
             }

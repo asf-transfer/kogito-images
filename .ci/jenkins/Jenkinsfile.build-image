@@ -214,12 +214,12 @@ pipeline {
                 script {
                     String resultingFileNameTarGz = "apache-kie-${getImageArtifactReleaseVersion()}-incubating-${getBuildImageName()}-image.tar.gz"
                     String resultingFileNameTar = resultingFileNameTarGz.replace('.gz', '')
-                    String signatureFileName = "${resultingFileName}.asc"
-                    String checksumFileName = "${resultingFileName}.sha512"
+                    String signatureFileName = "${resultingFileNameTarGz}.asc"
+                    String checksumFileName = "${resultingFileNameTarGz}.sha512"
                     sh """
                         docker pull ${getBuiltImageTag()}
                         docker tag ${getBuiltImageTag()} ${getBuiltDeployImageTag()}
-                        docker save ${getBuiltDeployImageTag()} | gzip > ${resultingFileName}
+                        docker save ${getBuiltDeployImageTag()} | gzip > ${resultingFileNameTarGz}
 
                         zcat ${resultingFileNameTarGz} | dd of=${resultingFileNameTar} bs=512 skip=1
                         tar -rvf ${resultingFileNameTar} ./LICENSE ./NOTICE ./DISCLAIMER-WIP

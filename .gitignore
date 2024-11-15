@@ -48,3 +48,6 @@ bats/*
 # python
 scripts/__pycache__
 
+
+# Apache RAT check excludes file
+!.rat-excludes

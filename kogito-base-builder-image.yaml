@@ -19,7 +19,7 @@
 schema_version: 1
 
 name: "docker.io/apache/incubator-kie-kogito-base-builder"
-version: "10.0.x"
+version: "10.0.0"
 from: "registry.access.redhat.com/ubi8/openjdk-17:1.19"
 description: "Image with JDK and Maven, used as a base image. It is used by Web Tools !"
 
@@ -33,7 +33,7 @@ labels:
   - name: "io.quarkus.platform.version"
     value: "3.8.4"
   - name: "org.kie.kogito.version"
-    value: "10.0.999-SNAPSHOT"
+    value: "10.0.0"
   - name: "maintainer"
     value: "Apache KIE <dev@kie.apache.org>"
   - name: "io.k8s.description"

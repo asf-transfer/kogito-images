@@ -18,7 +18,7 @@
 #
 schema_version: 1
 name: org.kie.kogito.jobs.service.ephemeral
-version: "10.0.x"
+version: "10.0.0"
 
 # see build-kogito-apps-components.sh script, responsible for build it.
 # called by the Makefile before builds

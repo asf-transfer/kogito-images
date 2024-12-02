@@ -33,18 +33,18 @@ items:
         openshift.io/provider-display-name: KIE Group.
     spec:
       tags:
-        - name: '10.0.x'
+        - name: '10.0.0'
           annotations:
             description: Kogito Serverless Workflow builder with minimum Quarkus extensions libraries preinstalled
             iconClass: icon-jbpm
             tags: kogito,quarkus,swf,maven
             supports: quarkus
-            version: '10.0.x'
+            version: '10.0.0'
           referencePolicy:
             type: Local
           from:
             kind: DockerImage
-            name: docker.io/apache/incubator-kie-sonataflow-builder:10.0.x
+            name: docker.io/apache/incubator-kie-sonataflow-builder:10.0.0
   - kind: ImageStream
     apiVersion: v1
     metadata:
@@ -54,18 +54,18 @@ items:
         openshift.io/provider-display-name: KIE Group.
     spec:
       tags:
-        - name: '10.0.x'
+        - name: '10.0.0'
           annotations:
             description: Kogito base builder
             iconClass: icon-jbpm
             tags: kogito,jdk,maven
             supports: quarkus
-            version: '10.0.x'
+            version: '10.0.0'
           referencePolicy:
             type: Local
           from:
             kind: DockerImage
-            name: docker.io/apache/incubator-kie-kogito-base-builder:10.0.x
+            name: docker.io/apache/incubator-kie-kogito-base-builder:10.0.0
   - kind: ImageStream
     apiVersion: v1
     metadata:
@@ -75,18 +75,18 @@ items:
         openshift.io/provider-display-name: Kie Group.
     spec:
       tags:
-        - name: '10.0.x'
+        - name: '10.0.0'
           annotations:
             description: Runtime image for the Kogito Data Index Service with ephemeral PostgreSQL
             iconClass: icon-jbpm
             tags: kogito,data-index,data-index-ephemeral
             supports: persistence backed by ephemeral PostgreSQL Server
-            version: '10.0.x'
+            version: '10.0.0'
           referencePolicy:
             type: Local
           from:
             kind: DockerImage
-            name: docker.io/apache/incubator-kie-kogito-data-index-ephemeral:10.0.x
+            name: docker.io/apache/incubator-kie-kogito-data-index-ephemeral:10.0.0
   - kind: ImageStream
     apiVersion: v1
     metadata:
@@ -96,18 +96,18 @@ items:
         openshift.io/provider-display-name: Kie Group.
     spec:
       tags:
-        - name: '10.0.x'
+        - name: '10.0.0'
           annotations:
             description: Runtime image for the Kogito Data Index Service with PostgreSQL
             iconClass: icon-jbpm
             tags: kogito,data-index,data-index-postgresql
             supports: persistence backed by PostgreSQL server
-            version: '10.0.x'
+            version: '10.0.0'
           referencePolicy:
             type: Local
           from:
             kind: DockerImage
-            name: docker.io/apache/incubator-kie-kogito-data-index-postgresql:10.0.x
+            name: docker.io/apache/incubator-kie-kogito-data-index-postgresql:10.0.0
   - kind: ImageStream
     apiVersion: v1
     metadata:
@@ -117,18 +117,18 @@ items:
         openshift.io/provider-display-name: Kie Group.
     spec:
       tags:
-        - name: '10.0.x'
+        - name: '10.0.0'
           annotations:
             description: Runtime image for the Kogito JIT Runner
             iconClass: icon-jbpm
             tags: kogito,jit-runner
             supports: JIT Runner
-            version: '10.0.x'
+            version: '10.0.0'
           referencePolicy:
             type: Local
           from:
             kind: DockerImage
-            name: docker.io/apache/incubator-kie-kogito-jit-runner:10.0.x
+            name: docker.io/apache/incubator-kie-kogito-jit-runner:10.0.0
   - kind: ImageStream
     apiVersion: v1
     metadata:
@@ -138,18 +138,18 @@ items:
         openshift.io/provider-display-name: Kie Group.
     spec:
       tags:
-        - name: '10.0.x'
+        - name: '10.0.0'
           annotations:
             description: Runtime image for Kogito in memory Jobs Service
             iconClass: icon-jbpm
             tags: kogito,jobs-service
             supports: out-of-box process timers
-            version: '10.0.x'
+            version: '10.0.0'
           referencePolicy:
             type: Local
           from:
             kind: DockerImage
-            name: docker.io/apache/incubator-kie-kogito-jobs-service-ephemeral:10.0.x
+            name: docker.io/apache/incubator-kie-kogito-jobs-service-ephemeral:10.0.0
   - kind: ImageStream
     apiVersion: v1
     metadata:
@@ -159,18 +159,18 @@ items:
         openshift.io/provider-display-name: Kie Group.
     spec:
       tags:
-        - name: '10.0.x'
+        - name: '10.0.0'
           annotations:
             description: Runtime image for Kogito Jobs Service based on Postgresql
             iconClass: icon-jbpm
             tags: kogito,jobs-service
             supports: out-of-box process timers
-            version: '10.0.x'
+            version: '10.0.0'
           referencePolicy:
             type: Local
           from:
             kind: DockerImage
-            name: docker.io/apache/incubator-kie-kogito-jobs-service-postgresql:10.0.x
+            name: docker.io/apache/incubator-kie-kogito-jobs-service-postgresql:10.0.0
   - kind: ImageStream
     apiVersion: v1
     metadata:
@@ -180,15 +180,15 @@ items:
         openshift.io/provider-display-name: Kie Group.
     spec:
       tags:
-        - name: '10.0.x'
+        - name: '10.0.0'
           annotations:
             description: All in One Runtime image for Kogito Jobs Service
             iconClass: icon-jbpm
             tags: kogito,jobs-service, all-in-one
             supports: out-of-box process timers
-            version: '10.0.x'
+            version: '10.0.0'
           referencePolicy:
             type: Local
           from:
             kind: DockerImage
-            name: docker.io/apache/incubator-kie-kogito-jobs-service-allinone:10.0.x
+            name: docker.io/apache/incubator-kie-kogito-jobs-service-allinone:10.0.0
